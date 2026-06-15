@@ -1,0 +1,7 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+#city-search {
+  width: clamp(200px, 100%, 500px);
+}
