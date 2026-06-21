@@ -1,5 +1,9 @@
 # Weather Checker
 
+### Pages link
+
+https://cinnabonmon.github.io/Road-Trip-Weather/
+
 ### Description
 
 This is a simple weather app to check weather in your area. It only checks cities and states within the US at the moment. You type in a city and it gives current weather as well as the weather for the next 5 days. When you search for a city it also saves it to the recent searches box. When you click on one of them it brings up that weather again.
@@ -17,7 +21,3 @@ This is a simple weather app to check weather in your area. It only checks citie
 ![What it looks like when visiting](./Assets/screenshot-2026-06-21_11-01-30.png)
 ![When searching for a city](./Assets/screenshot-2026-06-21_11-01-53.png)
 ![5 Day forecast of the city](./Assets/screenshot-2026-06-21_11-02-00.png)
-
-### Pages link
-
-https://cinnabonmon.github.io/Road-Trip-Weather/
