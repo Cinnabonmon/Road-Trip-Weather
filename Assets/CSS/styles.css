@@ -1,14 +1,26 @@
 * {
-  font-family: "Raleway", sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 #city-search {
-  width: clamp(200px, 100%, 500px);
+	width: clamp(200px, 100%, 500px);
+}
+
+#recentSearches p {
+	cursor: pointer;
 }
 
 @media (min-width: 500px) {
-  .w-xl-25 { width: 25% !important; }
-  .w-xl-50 { width: 50% !important; }
-  .w-xl-75 { width: 75% !important; }
-  .w-xl-100 { width: 100% !important; }
+	.w-xl-25 {
+		width: 25% !important;
+	}
+	.w-xl-50 {
+		width: 50% !important;
+	}
+	.w-xl-75 {
+		width: 75% !important;
+	}
+	.w-xl-100 {
+		width: 100% !important;
+	}
 }

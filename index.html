@@ -1,218 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Road Trip Weather</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./Assets/CSS/reset.css" />
-    <link rel="stylesheet" href="./Assets/CSS/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
-  <body class="m-3 d-flex align-items-center flex-column">
-    <nav class="d-flex justify-content-center align-items-center gap-2 w-100 w-xl-50 mb-5" aria-label="Main navigation">
-        <i class="bi bi-sun-fill" style="font-size: 3rem;color: orange;"></i>
-        <p class="fs-4 fw-bold">Your Weather</p>
-    </nav>
-    <main class="w- 100 w-xl-75">
-      <div class="mb-3 d-flex flex-column align-items-center">
-        <label for="city-search" id="city-search-label" class="form-label">Search</label>
-        <input
-          type="text"
-          class="form-control rounded-pill"
-          name="city-search"
-          id="city-search"
-          aria-labelledby="city-search-label"
-          aria-describedby="helpId"
-          title="City name"
-          placeholder="City name..."
-        />
-        <small id="helpId" class="form-text text-body-secondary"
-          >Search for a city</small
-        >
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Road Trip Weather</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="./Assets/CSS/reset.css" />
+		<link rel="stylesheet" href="./Assets/CSS/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body class="m-3 d-flex align-items-center flex-column">
+		<nav
+			class="d-flex justify-content-center align-items-center gap-2 w-100 w-xl-50 mb-5"
+			aria-label="Main navigation">
+			<i
+				class="bi bi-sun-fill"
+				style="font-size: 3rem; color: orange"></i>
+			<p class="fs-4 fw-bold">Your Weather</p>
+		</nav>
+		<main class="w- 100 w-xl-75">
+			<form class="mb-3 d-flex flex-column align-items-center">
+				<label
+					for="city-search"
+					id="city-search-label"
+					class="form-label"
+					>Search for city</label
+				>
+				<input
+					type="text"
+					class="form-control rounded-pill"
+					name="city-search"
+					id="city-search"
+					aria-labelledby="city-search-label"
+					aria-describedby="helpId"
+					title="City name"
+					placeholder="City name..." />
+				<button
+					type="submit"
+					class="btn-primary rounded-pill mt-1"
+					id="search-button">
+					Search
+				</button>
+			</form>
 
-      <div id="carouselId" class="carousel slide mb-3 w-100 w-xl-50 mx-auto" data-bs-ride="carousel">
-        <h3 class="text-center fs-6 fw-bolder">Recent Searches</h3>
-        <ol class="carousel-indicators">
-          <li
-            data-bs-target="#carouselId"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="First slide"
-          ></li>
-          <li
-            data-bs-target="#carouselId"
-            data-bs-slide-to="1"
-            aria-label="Second slide"
-          ></li>
-          <li
-            data-bs-target="#carouselId"
-            data-bs-slide-to="2"
-            aria-label="Third slide"
-          ></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src=""
-              class="w-100 d-block"
-              alt="First slide"
-            />Atlanta, GA
-          </div>
-          <div class="carousel-item">
-            <img
-              src=""
-              class="w-100 d-block"
-              alt="Second slide"
-            />Birmingham, AL
-          </div>
-          <div class="carousel-item">
-            <img
-              src=""
-              class="w-100 d-block"
-              alt="Third slide"
-            />Baton Rouge, LA
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselId"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselId"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
-      <div class="todayWeather w-100  border">
-        <div class="d-flex flex-row justify-content-around p-4" id="todayWeatherCity">
-          <div id="todayTitle">
-            <div id="cityName" class="d-flex flex-row align-items-center gap-2">
-              <h3 id="todayCity" class="mb-2 fs-1 fw-bold text-center">Atlanta</h3>
-              <i id="todayIcon" class="bi-brightness-alt-high-fill" style="color: orangered; font-size: 2rem"></i>
-            </div>
-            <p id="todaysDate">11/05/2026</p>
-          </div>
-          <div id="todayWeatherDetails"
-          class="d-flex flex-column align-items-center gap-2"
-          >
-            <div class="todayTemp" id="todayTemp">75*</div>
-            <div class="todayHumidity" id="todayHumidity">60%</div>
-            <div class="todayWind" id="todayWind">20 mph</div>
-          </div>
-        </div>
-      </div>
+			<p class="fs-3 fw-bold text-center">Recent Searches</p>
+			<div
+				class="d-flex w-50 gap-2 justify-content-center p-3 mb-4"
+				id="recentSearches"></div>
 
-      <h3 class="fs-3 text-center mt-5 fw-bolder">5 Day Forecast</h3>
-      <div id="weatherForecast" class="w-100 border mt-3">
-        <div class="d-flex flex-row justify-content-around p-4 border-bottom mx-4" id="todayWeatherCity">
-          <div id="todayTitle">
-            <div id="cityName" class="d-flex flex-row align-items-center gap-2">
-              <h3 id="todayCity" class="mb-2 fs-1 fw-bold text-center">Monday
-              </h3>
-              <i id="todayIcon" class="bi-brightness-alt-high-fill" style="color: orangered; font-size: 2rem"></i>
-            </div>
-            <p id="todaysDate">11/05/2026</p>
-          </div>
-          <div id="todayWeatherDetails"
-          class="d-flex flex-column align-items-center gap-2"
-          >
-            <div class="todayTemp" id="todayTemp">75*</div>
-            <div class="todayHumidity" id="todayHumidity">60%</div>
-            <div class="todayWind" id="todayWind">20 mph</div>
-          </div>
-        </div>
-        <div class="d-flex flex-row justify-content-around p-4 mx-4 border-bottom" id="todayWeatherCity">
-          <div id="todayTitle">
-            <div id="cityName" class="d-flex flex-row align-items-center gap-2">
-              <h3 id="todayCity" class="mb-2 fs-1 fw-bold text-center">Tuesday</h3>
-              <i id="todayIcon" class="bi-brightness-alt-high-fill" style="color: orangered; font-size: 2rem"></i>
-            </div>
-            <p id="todaysDate">11/05/2026</p>
-          </div>
-          <div id="todayWeatherDetails"
-          class="d-flex flex-column align-items-center gap-2"
-          >
-            <div class="todayTemp" id="todayTemp">75*</div>
-            <div class="todayHumidity" id="todayHumidity">60%</div>
-            <div class="todayWind" id="todayWind">20 mph</div>
-          </div>
-        </div>
-        <div class="d-flex flex-row justify-content-around p-4 border-bottom mx-4" id="todayWeatherCity">
-          <div id="todayTitle">
-            <div id="cityName" class="d-flex flex-row align-items-center gap-2">
-              <h3 id="todayCity" class="mb-2 fs-1 fw-bold text-center">Wednesday</h3>
-              <i id="todayIcon" class="bi-brightness-alt-high-fill" style="color: orangered; font-size: 2rem"></i>
-            </div>
-            <p id="todaysDate">11/05/2026</p>
-          </div>
-          <div id="todayWeatherDetails"
-          class="d-flex flex-column align-items-center gap-2"
-          >
-            <div class="todayTemp" id="todayTemp">75*</div>
-            <div class="todayHumidity" id="todayHumidity">60%</div>
-            <div class="todayWind" id="todayWind">20 mph</div>
-          </div>
-        </div>
-        <div class="d-flex flex-row justify-content-around p-4 border-bottom  mx-4" id="todayWeatherCity">
-          <div id="todayTitle">
-            <div id="cityName" class="d-flex flex-row align-items-center gap-2">
-              <h3 id="todayCity" class="mb-2 fs-1 fw-bold text-center">Thursday</h3>
-              <i id="todayIcon" class="bi-brightness-alt-high-fill" style="color: orangered; font-size: 2rem"></i>
-            </div>
-            <p id="todaysDate">11/05/2026</p>
-          </div>
-          <div id="todayWeatherDetails"
-          class="d-flex flex-column align-items-center gap-2"
-          >
-            <div class="todayTemp" id="todayTemp">75*</div>
-            <div class="todayHumidity" id="todayHumidity">60%</div>
-            <div class="todayWind" id="todayWind">20 mph</div>
-          </div>
-        </div>
-        <div class="d-flex flex-row justify-content-around p-4 mx-4" id="todayWeatherCity">
-          <div id="todayTitle">
-            <div id="cityName" class="d-flex flex-row align-items-center gap-2">
-              <h3 id="todayCity" class="mb-2 fs-1 fw-bold text-center">Friday</h3>
-              <i id="todayIcon" class="bi-brightness-alt-high-fill" style="color: orangered; font-size: 2rem"></i>
-            </div>
-            <p id="todaysDate">11/05/2026</p>
-          </div>
-          <div id="todayWeatherDetails"
-          class="d-flex flex-column align-items-center gap-2"
-          >
-            <div class="todayTemp" id="todayTemp">75*</div>
-            <div class="todayHumidity" id="todayHumidity">60%</div>
-            <div class="todayWind" id="todayWind">20 mph</div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./Assets/JS/index.js"></script>
-  </body>
+			<div id="currentWeather"></div>
+
+			<div id="forecastWeather"></div>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+		<script src="./Assets/JS/index.js"></script>
+	</body>
 </html>
