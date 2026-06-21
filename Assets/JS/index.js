@@ -194,7 +194,6 @@ renderSavedCities();
 searchButton.addEventListener('click', (e) => {
 	e.preventDefault();
 	if (e.target) {
-		console.log(citySearch.value);
 		getWeatherData(citySearch.value)
 			.then(() => {
 				render();
@@ -203,7 +202,6 @@ searchButton.addEventListener('click', (e) => {
 				}
 				saveState();
 				renderSavedCities();
-				console.log(savedCities);
 				citySearch.value = '';
 			})
 			.catch((error) => {
